@@ -2,68 +2,68 @@
 #include <dt-bindings/zmk/keys.h>
 
 / {
-    behaviors {
-        fx1: fx1 {
-            compatible = "zmk,behavior-tap-dance";
-            label = "FX1";
-            #binding-cells = <0>;
-            bindings = <&kt F1>, <&kp F11>, <&kp F21>;
-        };
-        fx2: fx2 {
-            compatible = "zmk,behavior-tap-dance";
-            label = "FX2";
-            #binding-cells = <0>;
-            bindings = <&kp F2>, <&kp F12>, <&kp F22>;
-        };
-        fx3: fx3 {
-            compatible = "zmk,behavior-tap-dance";
-            label = "FX3";
-            #binding-cells = <0>;
-            bindings = <&kp F3>, <&kp F13>, <&kp F23>;
-        };
-        fx4: fx4 {
-            compatible = "zmk,behavior-tap-dance";
-            label = "FX4";
-            #binding-cells = <0>;
-            bindings = <&kp F4>, <&kp F14>, <&kp F24>;
-        };
-        fx5: fx5 {
-            compatible = "zmk,behavior-tap-dance";
-            label = "FX5";
-            #binding-cells = <0>;
-            bindings = <&kp F5>, <&kp F15>;
-        };
-        fx6: fx6 {
-            compatible = "zmk,behavior-tap-dance";
-            label = "FX6";
-            #binding-cells = <0>;
-            bindings = <&kp F6>, <&kp F16>;
-        };
-        fx7: fx7 {
-            compatible = "zmk,behavior-tap-dance";
-            label = "FX7";
-            #binding-cells = <0>;
-            bindings = <&kp F7>, <&kp F17>;
-        };
-        fx8: fx8 {
-            compatible = "zmk,behavior-tap-dance";
-            label = "FX8";
-            #binding-cells = <0>;
-            bindings = <&kp F8>, <&kp F18>;
-        };
-        fx9: fx9 {
-            compatible = "zmk,behavior-tap-dance";
-            label = "FX9";
-            #binding-cells = <0>;
-            bindings = <&kp F9>, <&kp F19>;
-        };
-        fx0: fx0 {
-            compatible = "zmk,behavior-tap-dance";
-            label = "FX0";
-            #binding-cells = <0>;
-            bindings = <&kp F0>, <&kp F10>;
-        };
-    };
+//    behaviors {
+//        fx1: fx1 {
+//            compatible = "zmk,behavior-tap-dance";
+//            label = "FX1";
+//            #binding-cells = <0>;
+//            bindings = <&kt F1>, <&kp F11>, <&kp F21>;
+//        };
+//        fx2: fx2 {
+//            compatible = "zmk,behavior-tap-dance";
+//            label = "FX2";
+//            #binding-cells = <0>;
+//            bindings = <&kp F2>, <&kp F12>, <&kp F22>;
+//        };
+//        fx3: fx3 {
+//            compatible = "zmk,behavior-tap-dance";
+//            label = "FX3";
+//            #binding-cells = <0>;
+//            bindings = <&kp F3>, <&kp F13>, <&kp F23>;
+//        };
+//        fx4: fx4 {
+//            compatible = "zmk,behavior-tap-dance";
+//            label = "FX4";
+//            #binding-cells = <0>;
+//            bindings = <&kp F4>, <&kp F14>, <&kp F24>;
+//        };
+//        fx5: fx5 {
+//            compatible = "zmk,behavior-tap-dance";
+//            label = "FX5";
+//            #binding-cells = <0>;
+//            bindings = <&kp F5>, <&kp F15>;
+//        };
+//        fx6: fx6 {
+//            compatible = "zmk,behavior-tap-dance";
+//            label = "FX6";
+//            #binding-cells = <0>;
+//            bindings = <&kp F6>, <&kp F16>;
+//        };
+//        fx7: fx7 {
+//            compatible = "zmk,behavior-tap-dance";
+//            label = "FX7";
+//            #binding-cells = <0>;
+//            bindings = <&kp F7>, <&kp F17>;
+//        };
+//        fx8: fx8 {
+//            compatible = "zmk,behavior-tap-dance";
+//            label = "FX8";
+//            #binding-cells = <0>;
+//            bindings = <&kp F8>, <&kp F18>;
+//        };
+//        fx9: fx9 {
+//            compatible = "zmk,behavior-tap-dance";
+//            label = "FX9";
+//            #binding-cells = <0>;
+//            bindings = <&kp F9>, <&kp F19>;
+//        };
+//        fx0: fx0 {
+//            compatible = "zmk,behavior-tap-dance";
+//            label = "FX0";
+//            #binding-cells = <0>;
+//            bindings = <&kp F0>, <&kp F10>;
+//        };
+//    };
 
     combos {
         compatible = "zmk,combos";
@@ -155,9 +155,9 @@
 
         layer_3 {
             bindings = <
-&sys_reset  &kp LEFT_GUI       &kp LALT         &mt LCTRL LA(F4)  &trans    &trans  &fx7    &fx8  &fx9  &sys_reset
-&trans      &kp K_PREVIOUS     &kp K_NEXT       &kp K_PLAY_PAUSE  &trans    &trans  &fx4    &fx5  &fx6  &fx0
-&trans      &kp K_VOLUME_DOWN  &kp K_VOLUME_UP  &kp K_MUTE        &trans    &trans  &fx1    &fx2  &fx3  &trans
+&sys_reset  &kp LEFT_GUI       &kp LALT         &mt LCTRL LA(F4)  &trans    &trans  &none   &none  &none  &sys_reset
+&trans      &kp K_PREVIOUS     &kp K_NEXT       &kp K_PLAY_PAUSE  &trans    &trans  &none   &none  &none  &none
+&trans      &kp K_VOLUME_DOWN  &kp K_VOLUME_UP  &kp K_MUTE        &trans    &trans  &none   &none  &fx3   &trans
                                                 &trans            &trans    &trans  &trans
             >;
         };
