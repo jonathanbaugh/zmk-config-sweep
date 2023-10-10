@@ -122,7 +122,7 @@
 
         tri_layer {
             bindings = <
-           &sys_reset  &trans     &trans     &trans    &bt BT_SEL 0    &trans     &fx7     &jx8     &jx0    &sys_reset
+           &sys_reset  &trans     &trans     &trans    &bt BT_SEL 0    &trans     &fx7     &fx8     &fx0    &sys_reset
             &trans     &trans     &trans     &trans    &bt BT_SEL 1    &trans     &fx4     &fx5     &fx6    &fx0
           &bootloader  &trans     &trans    &bt BT_CLR &bt BT_SEL 2    &trans     &fx1     &fx2     &fx3    &bootloader
                                              &trans     &trans         &trans     &trans
