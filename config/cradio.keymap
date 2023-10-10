@@ -83,6 +83,55 @@
         };
     };
 
+    combos {
+        compatible = "zmk,combos";
+        backspace {
+            bindings = <&kp BACKSPACE>;
+            key-positions = <22 23>;
+            layers = <0 1 2>;
+        };
+        backspace_wd {
+            bindings = <&kp LC(BACKSPACE)>;
+            key-positions = <23 22 21>;
+            layers = <0 1 2>;
+        };
+        escape {
+            bindings = <&kp ESCAPE>;
+            key-positions = <20 21 22 23>;
+            layers = <0 1 2>;
+        };
+        delete {
+            bindings = <&kp DELETE>;
+            key-positions = <24 23>;
+            layers = <0 1 2>;
+        };
+        delete_wd {
+            bindings = <&kp LC(DELETE)>;
+            key-positions = <24 23 22>;
+            layers = <0 1 2>;
+        };
+        cut {
+            bindings = <&kp LC(K_CUT)>;
+            key-positions = <25 26>;
+            layers = <0 1 2>;
+        };
+        copy {
+            bindings = <&kp K_COPY>;
+            key-positions = <26 27>;
+            layers = <0 1 2>;
+        };
+        paste {
+            bindings = <&kp K_PASTE>;
+            key-positions = <26 27 28>;
+            layers = <0 1 2>;
+        };
+        paste_h {
+            bindings = <&kp LG(V)>;
+            key-positions = <26 27 28 29>;
+            layers = <0 1 2>;
+        };
+    };
+
     conditional_layers {
         compatible = "zmk,conditional-layers";
         tri_layer {
