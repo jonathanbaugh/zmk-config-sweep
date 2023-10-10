@@ -25,7 +25,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "FX0";
             #binding-cells = <0>;
-            bindings = <&kp F0>, <&kp F10>;
+            bindings = <&kp F10>, <&kp F20>;
         };
         fx1: fx1 {
             compatible = "zmk,behavior-tap-dance";
