@@ -31,7 +31,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "FX1";
             #binding-cells = <0>;
-            bindings = <&kt F1>, <&kp F11>, <&kp F21>;
+            bindings = <&kp F1>, <&kp F11>, <&kp F21>;
         };
         fx2: fx2 {
             compatible = "zmk,behavior-tap-dance";
@@ -144,19 +144,19 @@
         compatible = "zmk,keymap";
         default_layer {
             bindings = <
-            &kp Q    TRML( D,         R,         W)     &kp B         &kp J      TRMR(F,         U,         P)    &kp SQT
-            &kp A      &kp S      &kp H      &kp  T     &kp G          &kp Y      &kp N      &kp E      &kp O     &kp I
-            &kp Z      &kp X      &kp M      &kp C      &kp V          &kp K      &kp L      &kp COMMA  &kp DOT    &kp FSLH
-                                            &kp LSHFT   &mo 1     &kp SPACE  &lt 1 BSPC
+                &kp Q    TRML( D,         R,         W)     &kp B         &kp J      TRMR(F,         U,         P)    &kp SQT
+                &kp A      &kp S      &kp H      &kp  T     &kp G          &kp Y      &kp N      &kp E      &kp O     &kp I
+                &kp Z      &kp X      &kp M      &kp C      &kp V          &kp K      &kp L      &kp COMMA  &kp DOT    &kp FSLH
+                                                &kp LSHFT   &mo 1     &kp SPACE  &lt 1 BSPC
             >;
         };
 
         right_layer {
             bindings = <
-            &kp INS    &kp N1     &kp N2     &kp N3     &trans         &kp HOME   &kp PG_DN  &kp PG_UP  &kp END    &kp COLON
-            &kp DEL    &kp N4     &kp N5     &kp N6     &trans         &kp LARW   &kp DARW   &kp UARW   &kp RARW   &kp SEMI
-           &caps_word  &kp N7     &kp N8     &kp N9     &kp N0         &trans     &trans     &trans     &trans     &trans
-                                             &trans     &kp ESC        &trans     &trans
+                &kp EXCL   &mt LEFT_GUI AT  &mt LALT LBRC         &mt LCTRL RBRC         &kp PRCNT        &kp PLUS    &mt RCTRL N7  &mt RALT N8  &mt RIGHT_GUI N9  &kp ASTERISK
+                &kp MINUS  &kp DLLR         &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp PIPE         &kp MINUS   &kp N4        &kp N5       &kp N6            &kp N0
+                &kp EQUAL  &kp HASH         &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp AMPERSAND    &kp PERIOD  &kp N1        &kp N2       &kp N3            &kp FSLH
+                                                                  &none                  &trans           &trans      &kp SPACE
             >;
         };
 
