@@ -92,19 +92,19 @@
         plus_eq: plus_eq {
             compatible = "zmk,behavior-tap-dance";
             label = "PLUS_EQ";
-            #binding-cells = <2>;
+            #binding-cells = <0>;
             bindings = <&kp EQUAL>, <&kp PLUS>;
         };
         grave_tilde: grave_tilde {
             compatible = "zmk,behavior-tap-dance";
             label = "GRAVE_TILDE";
-            #binding-cells = <2>;
+            #binding-cells = <0>;
             bindings = <&kp GRAVE>, <&kp TILDE>;
         };
         pipe_slash: pipe_slash {
             compatible = "zmk,behavior-tap-dance";
             label = "PIPE_SLASH";
-            #binding-cells = <2>;
+            #binding-cells = <0>;
             bindings = <&kp PIPE>, <&kp BSLH>;
         };
     };
