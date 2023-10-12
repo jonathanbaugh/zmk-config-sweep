@@ -170,6 +170,21 @@
             bindings = <&kp GRAVE>;
             key-positions = <33 16>;
         };
+
+        pipe {
+            bindings = <&kp PIPE>;
+            key-positions = <33 17>;
+        };
+
+        hyphen {
+            bindings = <&kp MINUS>;
+            key-positions = <33 18>;
+        };
+
+        quote {
+            bindings = <&kp SQT>;
+            key-positions = <33 19>;
+        };
     };
 
     conditional_layers {
