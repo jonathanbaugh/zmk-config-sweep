@@ -89,6 +89,24 @@
             #binding-cells = <0>;
             bindings = <&kp MINUS>, <&kp UNDER>;
         };
+        plus_eq: plus_eq {
+            compatible = "zmk,behavior-tap-dance";
+            label = "PLUS_EQ";
+            #binding-cells = <2>;
+            bindings = <&kp EQUAL>, <&kp PLUS>;
+        };
+        grave_tilde: grave_tilde {
+            compatible = "zmk,behavior-tap-dance";
+            label = "GRAVE_TILDE";
+            #binding-cells = <2>;
+            bindings = <&kp GRAVE>, <&kp TILDE>;
+        };
+        pipe_slash: pipe_slash {
+            compatible = "zmk,behavior-tap-dance";
+            label = "PIPE_SLASH";
+            #binding-cells = <2>;
+            bindings = <&kp PIPE>, <&kp BSLH>;
+        };
     };
 
     combos {
@@ -181,10 +199,10 @@
 
         left_layer {
             bindings = <
-&kp EXCL      &kp AT     &kp POUND    &kp DLLR   &kp PRCNT    &trans   &kp HOME   &kp UP    &kp END    &trans
-&dasherscore  &kp EQUAL  &comma_semi  &kp GRAVE  &kp PIPE     &kp TAB  &kp LEFT   &kp DOWN  &kp RIGHT  &kp RET
-&kp CARET     &kp AMPS   &kp STAR     &kp PLUS   &kp BSLH     &trans   &kp PG_UP  &trans    &kp PG_DN  &trans
-                                      &trans     &trans       &trans   &trans
+&kp EXCL      &kp AT    &kp POUND    &kp DLLR      &kp PRCNT        &trans   &kp HOME   &kp UP    &kp END    &trans
+&dasherscore  &plus_eq  &comma_semi  &grave_tilde  &pipe_slash      &kp TAB  &kp LEFT   &kp DOWN  &kp RIGHT  &kp RET
+&kp CARET     &kp AMPS  &kp STAR     &caps_word    &kp LC(GRAVE)    &trans   &kp PG_UP  &trans    &kp PG_DN  &trans
+                                     &trans        &trans           &trans   &trans
             >;
         };
 
