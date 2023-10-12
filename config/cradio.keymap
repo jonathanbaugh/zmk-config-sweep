@@ -165,6 +165,11 @@
             key-positions = <26 27 28 29>;
             layers = <0 1 2>;
         };
+
+        backtick {
+            bindings = <&kp GRAVE>;
+            key-positions = <33 16>;
+        };
     };
 
     conditional_layers {
@@ -190,10 +195,10 @@
 
         right_layer {
             bindings = <
-&kp EXCL     &mt LEFT_GUI AT  &mt LALT LBRC         &mt LCTRL RBRC         &kp PRCNT        &kp PLUS    &mt RCTRL N7  &mt RALT N8  &mt RIGHT_GUI N9  &kp ASTERISK
-&dasherscore &kp DLLR         &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp PIPE         &kp MINUS   &kp N4        &kp N5       &kp N6            &kp N0
-&kp EQUAL    &kp HASH         &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp AMPERSAND    &kp PERIOD  &kp N1        &kp N2       &kp N3            &kp FSLH
-                                                  &trans                 &trans           &trans      &trans
+&kp EXCL      &mt LEFT_GUI AT  &mt LALT LBRC         &mt LCTRL RBRC         &kp PRCNT        &kp PLUS    &mt RCTRL N7  &mt RALT N8  &mt RIGHT_GUI N9  &kp ASTERISK
+&dasherscore  &kp DLLR         &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp PIPE         &kp MINUS   &kp N4        &kp N5       &kp N6            &kp N0
+&kp EQUAL     &kp HASH         &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp AMPERSAND    &kp PERIOD  &kp N1        &kp N2       &kp N3            &kp FSLH
+                                                     &trans                 &trans           &trans      &trans
             >;
         };
 
