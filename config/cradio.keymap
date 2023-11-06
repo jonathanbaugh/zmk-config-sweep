@@ -170,21 +170,6 @@
             bindings = <&kp GRAVE>;
             key-positions = <33 16>;
         };
-
-        pipe {
-            bindings = <&kp PIPE>;
-            key-positions = <33 17>;
-        };
-
-        hyphen {
-            bindings = <&kp MINUS>;
-            key-positions = <33 18>;
-        };
-
-        quote {
-            bindings = <&kp SQT>;
-            key-positions = <33 19>;
-        };
     };
 
     conditional_layers {
@@ -228,10 +213,10 @@
 
         tri_layer {
             bindings = <
-&sys_reset   &trans  &trans  &trans      &bt BT_SEL 0    &trans  &fx7    &fx8  &fx0  &sys_reset
-&trans       &trans  &trans  &trans      &bt BT_SEL 1    &trans  &fx4    &fx5  &fx6  &fx0
-&bootloader  &trans  &trans  &bt BT_CLR  &bt BT_SEL 2    &trans  &fx1    &fx2  &fx3  &bootloader
-                             &trans      &trans          &trans  &trans
+&sys_reset   &kp K_VOLUME_DOWN  &kp K_VOLUME_UP  &kp K_MUTE        &bt BT_SEL 0    &trans  &fx7    &fx8  &fx0  &sys_reset
+&trans       &kp K_PREVIOUS     &kp K_NEXT       &kp K_PLAY_PAUSE  &bt BT_SEL 1    &trans  &fx4    &fx5  &fx6  &fx0
+&bootloader  &trans             &trans           &bt BT_CLR        &bt BT_SEL 2    &trans  &fx1    &fx2  &fx3  &bootloader
+                                                 &trans            &trans          &trans  &trans
             >;
         };
     };
