@@ -17,90 +17,105 @@
             require-prior-idle-ms = <100>;
             bindings = <&kp>, <&kp>;
         };
+
         fx0: fx0 {
             compatible = "zmk,behavior-tap-dance";
             label = "FX0";
             #binding-cells = <0>;
             bindings = <&kp F10>, <&kp F20>;
         };
+
         fx1: fx1 {
             compatible = "zmk,behavior-tap-dance";
             label = "FX1";
             #binding-cells = <0>;
             bindings = <&kp F1>, <&kp F11>, <&kp F21>;
         };
+
         fx2: fx2 {
             compatible = "zmk,behavior-tap-dance";
             label = "FX2";
             #binding-cells = <0>;
             bindings = <&kp F2>, <&kp F12>, <&kp F22>;
         };
+
         fx3: fx3 {
             compatible = "zmk,behavior-tap-dance";
             label = "FX3";
             #binding-cells = <0>;
             bindings = <&kp F3>, <&kp F13>, <&kp F23>;
         };
+
         fx4: fx4 {
             compatible = "zmk,behavior-tap-dance";
             label = "FX4";
             #binding-cells = <0>;
             bindings = <&kp F4>, <&kp F14>, <&kp F24>;
         };
+
         fx5: fx5 {
             compatible = "zmk,behavior-tap-dance";
             label = "FX5";
             #binding-cells = <0>;
             bindings = <&kp F5>, <&kp F15>;
         };
+
         fx6: fx6 {
             compatible = "zmk,behavior-tap-dance";
             label = "FX6";
             #binding-cells = <0>;
             bindings = <&kp F6>, <&kp F16>;
         };
+
         fx7: fx7 {
             compatible = "zmk,behavior-tap-dance";
             label = "FX7";
             #binding-cells = <0>;
             bindings = <&kp F7>, <&kp F17>;
         };
+
         fx8: fx8 {
             compatible = "zmk,behavior-tap-dance";
             label = "FX8";
             #binding-cells = <0>;
             bindings = <&kp F8>, <&kp F18>;
         };
+
         fx9: fx9 {
             compatible = "zmk,behavior-tap-dance";
             label = "FX9";
             #binding-cells = <0>;
             bindings = <&kp F9>, <&kp F19>;
         };
+
         comma_semi: comma_semi {
             compatible = "zmk,behavior-tap-dance";
             label = "COMMA_SEMI";
             #binding-cells = <0>;
             bindings = <&kp COLON>, <&kp SEMI>;
         };
+
         dasherscore: dasherscore {
             compatible = "zmk,behavior-tap-dance";
             label = "DASHERSCORE";
             #binding-cells = <0>;
             bindings = <&kp MINUS>, <&kp UNDER>;
         };
+
         plus_eq: plus_eq {
             compatible = "zmk,behavior-tap-dance";
             label = "PLUS_EQ";
             #binding-cells = <0>;
             bindings = <&kp EQUAL>, <&kp PLUS>;
         };
+
         grave_tilde: grave_tilde {
             compatible = "zmk,behavior-tap-dance";
             label = "GRAVE_TILDE";
             #binding-cells = <0>;
             bindings = <&kp GRAVE>, <&kp TILDE>;
         };
+
         pipe_slash: pipe_slash {
             compatible = "zmk,behavior-tap-dance";
             label = "PIPE_SLASH";
@@ -204,10 +219,10 @@
 
         left_layer {
             bindings = <
-&kp EXCL      &kp AT    &kp POUND    &kp DLLR      &kp PRCNT        &trans   &kp HOME   &kp UP    &kp END    &trans
-&dasherscore  &plus_eq  &comma_semi  &grave_tilde  &pipe_slash      &kp TAB  &kp LEFT   &kp DOWN  &kp RIGHT  &kp RET
-&kp CARET     &kp AMPS  &kp STAR     &caps_word    &kp LC(GRAVE)    &trans   &kp PG_UP  &trans    &kp PG_DN  &trans
-                                     &trans        &trans           &trans   &trans
+&kp EXCL      &mt LEFT_WIN AT_SIGN  &mt LEFT_ALT HASH  &mt LCTRL DOLLAR  &kp PRCNT        &trans   &kp HOME   &kp UP    &kp END    &trans
+&dasherscore  &plus_eq              &comma_semi        &grave_tilde      &pipe_slash      &kp TAB  &kp LEFT   &kp DOWN  &kp RIGHT  &kp RET
+&kp CARET     &kp AMPS              &kp STAR           &caps_word        &kp LC(GRAVE)    &trans   &kp PG_UP  &trans    &kp PG_DN  &trans
+                                                       &trans            &trans           &trans   &trans
             >;
         };
 
