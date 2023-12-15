@@ -181,9 +181,24 @@
             layers = <0 1 2>;
         };
 
+        dash {
+            bindings = <&kp MINUS>;
+            key-positions = <33 16>;
+        };
+
+        semicolon {
+            bindings = <&kp SEMI>;
+            key-positions = <33 17>;
+        };
+
         backtick {
             bindings = <&kp GRAVE>;
-            key-positions = <33 16>;
+            key-positions = <33 18>;
+        };
+
+        equals {
+            bindings = <&kp EQUAL>;
+            key-positions = <19 33>;
         };
     };
 
@@ -232,6 +247,15 @@
 &trans       &kp C_PREVIOUS     &kp C_NEXT       &kp C_PP    &bt BT_SEL 1    &trans  &fx4    &fx5  &fx6  &fx0
 &bootloader  &trans             &trans           &bt BT_CLR  &bt BT_SEL 2    &trans  &fx1    &fx2  &fx3  &bootloader
                                                  &trans      &trans          &trans  &trans
+            >;
+        };
+
+        work_in_progress {
+            bindings = <
+&kp EXCL  &kp AT  &kp HASH  &kp DOLLAR  &kp PERCENT    &kp CARET  &kp AMPERSAND  &kp ASTERISK  &kp MINUS   &kp EQUAL
+&kp N1    &kp N2  &kp N3    &kp N4      &kp N5         &kp N6     &kp N7         &kp N8        &kp N9      &kp N0
+&trans    &trans  &trans    &trans      &trans         &trans     &trans         &kp COMMA     &kp PERIOD  &kp SLASH
+                            &trans      &trans         &trans     &trans
             >;
         };
     };
