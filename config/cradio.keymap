@@ -181,29 +181,25 @@
             layers = <0 1 2>;
         };
 
-        dash {
-            bindings = <&kp MINUS>;
-            key-positions = <33 16>;
-        };
-
-        semicolon {
-            bindings = <&kp SEMI>;
-            key-positions = <33 17>;
-        };
 
         backtick {
             bindings = <&kp GRAVE>;
-            key-positions = <33 18>;
+            key-positions = <33 16>;
+        };
+
+        dash {
+            bindings = <&kp MINUS>;
+            key-positions = <33 17>;
         };
 
         equals {
             bindings = <&kp EQUAL>;
-            key-positions = <19 33>;
+            key-positions = <33 18>;
         };
 
-        to_layer_4 {
-            bindings = <&mo 0>;
-            key-positions = <30 31>;
+        semicolon {
+            bindings = <&kp SEMI>;
+            key-positions = <33 19>;
         };
 
         https {
