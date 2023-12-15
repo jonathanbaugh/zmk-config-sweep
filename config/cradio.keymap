@@ -200,6 +200,16 @@
             bindings = <&kp EQUAL>;
             key-positions = <19 33>;
         };
+
+        to_layer_4 {
+            bindings = <&mo 0>;
+            key-positions = <30 31>;
+        };
+
+        https {
+            bindings = <&https>;
+            key-positions = <29 33>;
+        };
     };
 
     conditional_layers {
@@ -208,6 +218,15 @@
         tri_layer {
             if-layers = <1 2>;
             then-layer = <3>;
+        };
+    };
+
+    macros {
+        https: https {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp H &kp T &kp T &kp P &kp S &kp COLON &kp FSLH &kp FSLH>;
+            label = "HTTPS";
         };
     };
 
@@ -223,21 +242,21 @@
             >;
         };
 
-        right_layer {
+        num_sym {
             bindings = <
-&kp EXCL      &mt LEFT_GUI AT  &mt LALT LBRC         &mt LCTRL RBRC         &kp PRCNT        &kp PLUS    &mt RCTRL N7  &mt RALT N8  &mt RIGHT_GUI N9  &kp ASTERISK
-&dasherscore  &kp DLLR         &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp PIPE         &kp MINUS   &kp N4        &kp N5       &kp N6            &kp N0
-&kp EQUAL     &kp HASH         &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp AMPERSAND    &kp PERIOD  &kp N1        &kp N2       &kp N3            &kp FSLH
-                                                     &trans                 &trans           &trans      &trans
+&kp EXCL  &mt LEFT_GUI AT  &mt LALT LBRC         &mt LCTRL RBRC         &kp PRCNT    &kp PLUS    &mt RCTRL N7  &mt RALT N8  &mt RIGHT_GUI N9  &kp ASTRK
+&kp HASH  &kp DLLR         &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp PIPE     &kp PERIOD  &kp N4        &kp N5       &kp N6            &kp N0
+&kp AMPS  &kp ASTRK        &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp BSLH     &kp MINUS   &kp N1        &kp N2       &kp N3            &kp SLASH
+                                                 &trans                 &trans       &trans      &trans
             >;
         };
 
-        left_layer {
+        nav {
             bindings = <
-&kp EXCL      &mt LEFT_WIN AT_SIGN  &mt LEFT_ALT HASH  &mt LCTRL DOLLAR  &kp PRCNT        &trans   &kp HOME   &kp UP    &kp END    &trans
-&dasherscore  &plus_eq              &comma_semi        &grave_tilde      &pipe_slash      &kp TAB  &kp LEFT   &kp DOWN  &kp RIGHT  &kp RET
-&kp CARET     &kp AMPS              &kp STAR           &caps_word        &kp LC(GRAVE)    &trans   &kp PG_UP  &trans    &kp PG_DN  &trans
-                                                       &trans            &trans           &trans   &trans
+&trans  &kp LGUI  &kp LALT  &kp LCTRL  &trans    &trans   &kp HOME   &kp UP    &kp END    &trans
+&trans  &trans    &trans    &trans     &trans    &kp TAB  &kp LEFT   &kp DOWN  &kp RIGHT  &kp RET
+&trans  &trans    &trans    &trans     &trans    &trans   &kp PG_UP  &trans    &kp PG_DN  &trans
+                            &trans     &trans    &trans   &trans
             >;
         };
 
@@ -247,15 +266,6 @@
 &trans       &kp C_PREVIOUS     &kp C_NEXT       &kp C_PP    &bt BT_SEL 1    &trans  &fx4    &fx5  &fx6  &fx0
 &bootloader  &trans             &trans           &bt BT_CLR  &bt BT_SEL 2    &trans  &fx1    &fx2  &fx3  &bootloader
                                                  &trans      &trans          &trans  &trans
-            >;
-        };
-
-        work_in_progress {
-            bindings = <
-&kp EXCL  &kp AT  &kp HASH  &kp DOLLAR  &kp PERCENT    &kp CARET  &kp AMPERSAND  &kp ASTERISK  &kp MINUS   &kp EQUAL
-&kp N1    &kp N2  &kp N3    &kp N4      &kp N5         &kp N6     &kp N7         &kp N8        &kp N9      &kp N0
-&trans    &trans  &trans    &trans      &trans         &trans     &trans         &kp COMMA     &kp PERIOD  &kp SLASH
-                            &trans      &trans         &trans     &trans
             >;
         };
     };
