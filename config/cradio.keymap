@@ -181,7 +181,6 @@
             layers = <0 1 2>;
         };
 
-
         backtick {
             bindings = <&kp GRAVE>;
             key-positions = <33 16>;
@@ -249,19 +248,19 @@
 
         nav {
             bindings = <
-&trans  &kp LGUI  &kp LALT  &kp LCTRL  &trans    &trans   &kp HOME   &kp UP    &kp END    &trans
-&trans  &trans    &trans    &trans     &trans    &kp TAB  &kp LEFT   &kp DOWN  &kp RIGHT  &kp RET
-&trans  &trans    &trans    &trans     &trans    &trans   &kp PG_UP  &trans    &kp PG_DN  &trans
-                            &trans     &trans    &trans   &trans
+&none  &kp LGUI      &kp LALT      &kp LCTRL   &none     &none    &kp HOME   &kp UP    &kp END    &none
+&none  &kp C_PREV    &kp C_NEXT    &kp C_PLAY  &none     &kp TAB  &kp LEFT   &kp DOWN  &kp RIGHT  &kp RET
+&none  &kp C_VOL_DN  &kp C_VOL_UP  &kp K_MUTE  &none     &none    &kp PG_UP  &none     &kp PG_DN  &none
+                                   &trans      &trans    &trans   &trans
             >;
         };
 
         tri_layer {
             bindings = <
-&sys_reset   &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp C_MUTE  &bt BT_SEL 0    &trans  &fx7    &fx8  &fx0  &sys_reset
-&trans       &kp C_PREVIOUS     &kp C_NEXT       &kp C_PP    &bt BT_SEL 1    &trans  &fx4    &fx5  &fx6  &fx0
-&bootloader  &trans             &trans           &bt BT_CLR  &bt BT_SEL 2    &trans  &fx1    &fx2  &fx3  &bootloader
-                                                 &trans      &trans          &trans  &trans
+&sys_reset   &kp LGUI  &kp LALT  &kp LCTRL   &bt BT_SEL 0    &none   &fx7    &fx8  &fx0  &sys_reset
+&none        &none     &none     &none       &bt BT_SEL 1    &none   &fx4    &fx5  &fx6  &fx0
+&bootloader  &none     &none     &bt BT_CLR  &bt BT_SEL 2    &none   &fx1    &fx2  &fx3  &bootloader
+                                 &trans      &trans          &trans  &trans
             >;
         };
     };
