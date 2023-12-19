@@ -249,8 +249,8 @@
         nav {
             bindings = <
 &none  &kp LGUI      &kp LALT      &kp LCTRL   &none     &none    &kp HOME   &kp UP    &kp END    &none
-&none  &kp C_PREV    &kp C_NEXT    &kp C_PLAY  &none     &kp TAB  &kp LEFT   &kp DOWN  &kp RIGHT  &kp RET
-&none  &kp C_VOL_DN  &kp C_VOL_UP  &kp K_MUTE  &none     &none    &kp PG_UP  &none     &kp PG_DN  &none
+&none  &kp K_PREV    &kp K_NEXT    &kp K_PP    &none     &kp TAB  &kp LEFT   &kp DOWN  &kp RIGHT  &kp RET
+&none  &kp K_VOL_DN  &kp K_VOL_UP  &kp C_MUTE  &none     &none    &kp PG_UP  &none     &kp PG_DN  &none
                                    &trans      &trans    &trans   &trans
             >;
         };
