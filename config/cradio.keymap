@@ -205,6 +205,16 @@
             bindings = <&https>;
             key-positions = <29 33>;
         };
+
+        close_tab {
+            bindings = <&kp LC(W)>;
+            key-positions = <3 30>;
+        };
+
+        find {
+            bindings = <&kp LC(F)>;
+            key-positions = <6 33>;
+        };
     };
 
     conditional_layers {
