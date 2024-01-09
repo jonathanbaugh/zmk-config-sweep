@@ -213,7 +213,7 @@
 
         find {
             bindings = <&kp LC(F)>;
-            key-positions = <6 33>;
+            key-positions = <33 6>;
         };
     };
 
