@@ -201,11 +201,6 @@
             key-positions = <33 19>;
         };
 
-        https {
-            bindings = <&https>;
-            key-positions = <29 33>;
-        };
-
         close_tab {
             bindings = <&kp LC(W)>;
             key-positions = <3 30>;
@@ -223,15 +218,6 @@
         tri_layer {
             if-layers = <1 2>;
             then-layer = <3>;
-        };
-    };
-
-    macros {
-        https: https {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp H &kp T &kp T &kp P &kp S &kp COLON &kp FSLH &kp FSLH>;
-            label = "HTTPS";
         };
     };
 
