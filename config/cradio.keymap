@@ -206,9 +206,14 @@
             key-positions = <3 30>;
         };
 
-        find {
-            bindings = <&kp LC(F)>;
-            key-positions = <33 6>;
+        bootloader_right {
+            bindings = <&bootloader>;
+            key-positions = <32 9>;
+        };
+
+        bootloader_left {
+            bindings = <&bootloader>;
+            key-positions = <0 31>;
         };
     };
 
