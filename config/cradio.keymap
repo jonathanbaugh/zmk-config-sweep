@@ -131,12 +131,14 @@
             bindings = <&kp BACKSPACE>;
             key-positions = <22 23>;
             layers = <0 1 2>;
+            slow-release;
         };
 
         backspace_wd {
             bindings = <&kp LC(BACKSPACE)>;
             key-positions = <23 22 21>;
             layers = <0 1 2>;
+            slow-release;
         };
 
         escape {
